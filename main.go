@@ -118,6 +118,7 @@ func httpGet(q string , id string) {
 
     q = strings.Replace( q , " " , "," , -1)    
     //q = strings.Replace("oink oink oink", "oink", "moo", -1)
+    // 140.115.54.66 new ip
     resp, err := http.Get("http://140.115.54.93:8088/?q="+q+"&id="+id)
     if err != nil {
         // handle error
